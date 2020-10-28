@@ -255,6 +255,12 @@ color:#333;
         margin-bottom: 10vh;
     }
 }
+@media (max-width:629px){
+    #dash{
+        font-size:8vw;
+        }
+}
+
 #rentb{
     border: none;
     margin-left: 1vw;
