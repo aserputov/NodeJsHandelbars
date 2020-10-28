@@ -78,8 +78,12 @@ app.get("/searchres", function(req,res){
         layout: false // do not use the default Layout (main.hbs)
     });
 });
-
-
+app.get("/dashboard", function(req,res){
+   
+    res.render('dashboard.hbs', {
+        layout: false // do not use the default Layout (main.hbs)
+    });
+});
 
 // call function after http server starts listening for requests
 
