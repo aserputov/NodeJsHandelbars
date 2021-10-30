@@ -1,45 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-{{>head}}
+<!doctype html>
+<html>
+
+<head>
+  {{> head}}
+</head>
+
 <body>
-  {{> header}} 
-        <!-- <hr> -->
-      <main>
-      
-      
-        
-        <div class="row" id="regr">
-            <div class="col-sm-1" id="left">
-            
-            </div>
-            <div class="col-sm-10">
-              
-      
-              <form id="form" >
-    
-                <h1 id="dash">Welcome,<br>{{data.fname}}{{data.lname}}</h1><br>
-              
-                <h1 id="dash">Your login: {{data.email}}</h1><br>
-          
-              </form>
-      
-      
-            </div>
-            <div class="col-sm-1"  id="right">
-           
-            </div>
-          </div>
-       
-      </main>
-      <br><br><br>
-         {{> footer}}
-          
+   {{> header}} 
+   <div id="form" >
+    <h1 id="admin">Admin - DASHBOARD</h1>
+  <h3>Hello, {{usr.username}}</h3>
+  <hr>
+  <p>Here is the information we have on file for you:</p>
+  <hr>
+  <h4>Surname: {{usr.lastName}} </h4>
+  <h4>Name: {{usr.firstName}}</h4>
+  <a href="Profile">Your profile</a>
+  <hr>
 
 
-    
+  <h1>Add AirBnb Ad</h1>
+  <a href="bnb">View List Of Bnbs</a>
+   </div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+            {{> footer }}
+
 </body>
+
 </html>

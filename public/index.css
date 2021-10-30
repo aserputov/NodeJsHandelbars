@@ -180,7 +180,7 @@ footer{
 }
 
 #become{
-    margin-left: 27vw;
+    margin-left: 20vw;
 }
 @media (max-width:629px){
     #become{
@@ -288,4 +288,7 @@ color:#333;
 }
 #maim{
     width: 100%;
+}
+#admin{
+    text-align: center;
 }

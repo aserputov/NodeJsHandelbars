@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+<head>
+  {{> head}}
+</head>
+
+<body>
+     {{> header }}
+     <div id="form" >
+     <h1>bnb</h1>
+    <p><a href="/bnb/Edit">Add New bnb</a></p>
+    {{#if hasBnbs}}
+    <table border="1">
+    <thead>
+
+      <tr>
+        <td>&nbsp;</td>
+        <td>ID</td>
+        <td>Year</td>
+        <td>Make</td>
+        <td>Model</td>
+        <td>VIN</td>
+        <td>Colour</td>
+        <td>&nbsp;</td>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each bnb}}
+      <tr>
+        <td><a href="/bnb/Edit/{{_id}}">Edit</a></td>
+        <td>{{@index}}: {{_id}}</td>
+        <td>{{year}}</td>
+        <td>{{make}}</td>
+        <td>{{model}}</td>
+        <td>{{VIN}}</td>
+        <td>{{colour}}</td>
+        <td><a href="/bnb/Delete/{{_id}}">Delete</a></td>
+      </tr>
+      {{else}}
+      <tr><td colspan="8">No data was found</td></tr>
+      {{/each}}
+    </tbody>
+  </table>
+  {{else}}
+  no Cars
+  {{/if}}
+    </div>
+    <br><br><br>
+            {{> footer }}
+
+</body>
+
+</html>

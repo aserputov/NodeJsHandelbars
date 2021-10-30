@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Dashboard</title>
+          <link rel="stylesheet" href="/css/theme.css" />
+
+</head>
+
+<body>
+    {{> header user}}
+    <h1>bnb Editor</h1>
+    <form method="POST" action="/bnb/Edit">
+        {{#if bnb._id}}
+            <input type="hidden" name="ID" value="{{bnb._id}}" />
+            <input type="hidden" name="edit" value="1" />
+            <h4>Editing bnb ID: {{bnb._id}}</h4>
+        {{else}}
+            <input type="hidden" name="edit" value="0" />
+            <label class="fixedlabel">ID</label><input type="number" name="ID" /><br/>
+        {{/if}}
+        <label class="fixedlabel">Year</label><input type="number" name="year" value="{{bnb.year}}" /><br/>
+        <label class="fixedlabel">Make</label><input type="text" name="make" value="{{bnb.make}}" /><br/>
+        <label class="fixedlabel">Model</label><input type="text" name="model" value="{{bnb.model}}" /><br/>
+        <label class="fixedlabel">VIN</label><input type="text" name="VIN" value="{{bnb.VIN}}" /><br/>
+        <label class="fixedlabel">Colour</label><input type="text" name="colour" value="{{bnb.colour}}" /><br/>
+        <label for="photo">Photo Upload</label></td><input type="file" id="photo" name="photo"/></td>
+        <label class="fixedlabel"></label><button type="submit" name="submit">Submit</button>
+    </form>
+
+    {{> footer user}}
+</body>
+</html>

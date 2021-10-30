@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+
+<head>
+  {{> head}}
+</head>
+
+<body>
+     {{> header }}
+     <div id="form" >
+    <h1 id="admin">User Profile: {{user.username}}</h1>
+    <label class="fixedlabel">User Name: {{user.username}}</label> <br/>
+    <label class="fixedlabel">First Name: {{user.firstName}}</label> <br/>
+    <label class="fixedlabel">Last Name:  {{user.lastName}}</label><br/>
+    <label class="fixedlabel">E-mail:  {{user.email}}</label><br/>
+    <label class="fixedlabel">Is Administrator:  {{user.isAdmin}}</label><br/>
+    <a href="/Profile/Edit">Edit</a><br>
+    <a href="/dashboard">Back to the Dashboard</a>
+    </div>
+    <br><br><br>
+            {{> footer }}
+
+</body>
+
+</html>

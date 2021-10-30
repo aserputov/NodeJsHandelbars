@@ -1,0 +1,3 @@
+Heroku: https://arcane-chamber-46884.herokuapp.com/
+GitHub: https://github.com/aserputov/web2
+Youtube: https://www.youtube.com/watch?v=14nqCMPiuUg&feature=youtu.be

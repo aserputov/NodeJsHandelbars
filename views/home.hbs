@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WEB322 - Week 10 Demo Homepage</title>
+        <link rel="stylesheet" href="css/theme.css" />
+    </head>
+
+    <body>
+        {{> header user}}
+
+        <h1>WEB322- Week 10 Demo Homepage</h1>
+        {{#if user}}
+            Welcome {{user.username}}, <a href="/logout">Logout</a>  
+        {{else}}
+            <a href="/login">Login</a>  
+        {{/if}}
+        {{> footer user}}
+    </body>
+</html>
